@@ -1,7 +1,7 @@
-package com.vestibulario.core.presentation.extensions
+package com.pilinhas.android.core.presentation.extensions
 
-import com.vestibulario.core.android.extensions.record
-import com.vestibulario.core.presentation.model.Task
+import com.pilinhas.android.core.android.extensions.record
+import com.pilinhas.android.core.presentation.model.Task
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.catch

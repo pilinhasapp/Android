@@ -1,14 +1,10 @@
-package com.vestibulario.core.work.di
+package com.pilinhas.android.core.work.di
 
 import android.content.Context
 import androidx.startup.Initializer
 import androidx.work.Configuration
-import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
-import com.vestibulario.core.work.worker.SyncHistorySearchTermListWorker
-import com.vestibulario.core.work.worker.SyncMostAccessedCourseListWorker
-import com.vestibulario.core.work.worker.SyncMostAccessedInstitutionListWorker
-import com.vestibulario.core.work.worker.SyncMostSearchedTermListWorker
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -38,12 +34,7 @@ internal class WorkManagerModule : Initializer<WorkManager> {
     }
 
     companion object {
-        private val ON_CREATE_WORKERS = listOf(
-            OneTimeWorkRequestBuilder<SyncHistorySearchTermListWorker>().build(),
-            OneTimeWorkRequestBuilder<SyncMostAccessedCourseListWorker>().build(),
-            OneTimeWorkRequestBuilder<SyncMostAccessedInstitutionListWorker>().build(),
-            OneTimeWorkRequestBuilder<SyncMostSearchedTermListWorker>().build()
-        )
+        private val ON_CREATE_WORKERS = listOf<OneTimeWorkRequest>()
     }
 
 }

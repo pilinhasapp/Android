@@ -1,4 +1,4 @@
-package com.vestibulario.core.android.viewstateholder
+package com.pilinhas.android.core.android.viewstateholder
 
 import kotlinx.coroutines.flow.StateFlow
 

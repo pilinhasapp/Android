@@ -1,4 +1,4 @@
-package com.vestibulario.core.android.di
+package com.pilinhas.android.core.android.di
 
 import dagger.Module
 import dagger.Provides

@@ -1,4 +1,4 @@
-package com.vestibulario.core.navigation.extension
+package com.pilinhas.android.core.navigation.extension
 
 fun String.toPath() =
     PATH_BEGIN_DELIMITER + this + PATH_END_DELIMITER

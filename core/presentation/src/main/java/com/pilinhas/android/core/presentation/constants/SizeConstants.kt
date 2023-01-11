@@ -1,4 +1,4 @@
-package com.vestibulario.core.presentation.constants
+package com.pilinhas.android.core.presentation.constants
 
 import androidx.compose.ui.unit.dp
 

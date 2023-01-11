@@ -1,4 +1,4 @@
-package com.vestibulario.core.android.vieweffectsender
+package com.pilinhas.android.core.android.vieweffectsender
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

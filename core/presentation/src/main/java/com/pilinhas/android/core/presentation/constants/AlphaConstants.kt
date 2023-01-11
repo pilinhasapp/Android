@@ -1,4 +1,4 @@
-package com.vestibulario.core.presentation.constants
+package com.pilinhas.android.core.presentation.constants
 
 object AlphaConstants {
     const val Disabled = 0.38f

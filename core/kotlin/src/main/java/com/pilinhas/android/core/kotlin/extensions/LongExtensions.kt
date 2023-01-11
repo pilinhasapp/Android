@@ -1,5 +1,5 @@
-package com.vestibulario.core.kotlin.extensions
+package com.pilinhas.android.core.kotlin.extensions
 
-import com.vestibulario.core.kotlin.constants.LongConstants
+import com.pilinhas.android.core.kotlin.constants.LongConstants
 
 fun Long?.orZero(): Long = this ?: LongConstants.ZERO

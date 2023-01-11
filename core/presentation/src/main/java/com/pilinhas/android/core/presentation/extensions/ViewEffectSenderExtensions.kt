@@ -1,9 +1,9 @@
-package com.vestibulario.core.presentation.extensions
+package com.pilinhas.android.core.presentation.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.platform.LocalContext
-import com.vestibulario.core.android.vieweffectsender.ViewEffectSender
+import com.pilinhas.android.core.android.vieweffectsender.ViewEffectSender
 import kotlinx.coroutines.flow.FlowCollector
 
 @Composable

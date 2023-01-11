@@ -1,5 +1,5 @@
-package com.vestibulario.core.kotlin.extensions
+package com.pilinhas.android.core.kotlin.extensions
 
-import com.vestibulario.core.kotlin.constants.DoubleConstants
+import com.pilinhas.android.core.kotlin.constants.DoubleConstants
 
 fun Double?.orZero(): Double = this ?: DoubleConstants.ZERO

@@ -1,4 +1,4 @@
-package com.vestibulario.core.kotlin.extensions
+package com.pilinhas.android.core.kotlin.extensions
 
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.Flow

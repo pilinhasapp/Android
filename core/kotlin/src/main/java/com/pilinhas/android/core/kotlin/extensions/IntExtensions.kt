@@ -1,5 +1,5 @@
-package com.vestibulario.core.kotlin.extensions
+package com.pilinhas.android.core.kotlin.extensions
 
-import com.vestibulario.core.kotlin.constants.IntConstants
+import com.pilinhas.android.core.kotlin.constants.IntConstants
 
 fun Int?.orZero(): Int = this ?: IntConstants.ZERO

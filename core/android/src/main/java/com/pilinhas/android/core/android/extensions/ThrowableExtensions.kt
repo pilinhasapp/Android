@@ -1,4 +1,4 @@
-package com.vestibulario.core.android.extensions
+package com.pilinhas.android.core.android.extensions
 
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 

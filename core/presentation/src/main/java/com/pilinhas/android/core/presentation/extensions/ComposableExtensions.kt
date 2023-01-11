@@ -1,4 +1,4 @@
-package com.vestibulario.core.presentation.extensions
+package com.pilinhas.android.core.presentation.extensions
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState

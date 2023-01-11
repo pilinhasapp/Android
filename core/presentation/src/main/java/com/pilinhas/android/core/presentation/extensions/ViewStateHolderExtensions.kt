@@ -1,8 +1,8 @@
-package com.vestibulario.core.presentation.extensions
+package com.pilinhas.android.core.presentation.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
-import com.vestibulario.core.android.viewstateholder.ViewStateHolder
+import com.pilinhas.android.core.android.viewstateholder.ViewStateHolder
 
 @Composable
 fun <T> ViewStateHolder<T>.collectViewState() =

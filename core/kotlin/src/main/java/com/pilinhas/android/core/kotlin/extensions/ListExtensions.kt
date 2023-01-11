@@ -1,6 +1,6 @@
-package com.vestibulario.core.kotlin.extensions
+package com.pilinhas.android.core.kotlin.extensions
 
-import com.vestibulario.core.kotlin.constants.IntConstants
+import com.pilinhas.android.core.kotlin.constants.IntConstants
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope

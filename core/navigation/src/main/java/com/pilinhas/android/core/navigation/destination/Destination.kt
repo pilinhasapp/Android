@@ -1,7 +1,7 @@
-package com.vestibulario.core.navigation.destination
+package com.pilinhas.android.core.navigation.destination
 
 import android.net.Uri
-import com.vestibulario.core.navigation.extension.toPath
+import com.pilinhas.android.core.navigation.extension.toPath
 
 abstract class Destination(protected val path: String, vararg args: String) {
 

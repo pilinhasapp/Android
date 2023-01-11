@@ -1,7 +1,7 @@
-package com.vestibulario.core.work.extensions
+package com.pilinhas.android.core.work.extensions
 
 import androidx.work.ListenableWorker.Result
-import com.vestibulario.core.android.extensions.record
+import com.pilinhas.android.core.android.extensions.record
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.lastOrNull
