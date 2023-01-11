@@ -12,5 +12,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Pilinhas"
-include ':app'
+
+rootDir.walkTopDown().forEach { file ->
+    if (File(file, "src").exists() && File(file, "build.gradle.kts").exists() && !file.endsWith("buildSrc")) {
+        val moduleName = file.path.removePrefix(rootDir.path).replace(File.separator, ":")
+        include(moduleName)
+    }
+}
