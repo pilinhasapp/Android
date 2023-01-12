@@ -7,7 +7,6 @@ sealed interface HomeViewState {
     object IsLoading : HomeViewState
 
     data class HasLoaded(
-        val selectedTabIndex: Int,
         val intervals: List<IntervalPresentation>
     ) : HomeViewState
 
