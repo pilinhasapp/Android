@@ -38,37 +38,37 @@ class HomeViewModel @Inject constructor() : ViewModel(),
                     IntervalPresentation(
                         id = "JAN/23",
                         tabTitle = "JAN/23",
-                        incomeAmount = "",
-                        outcomeAmount = "",
-                        balanceAmount = ""
+                        incomeAmount = "R$ 0,00",
+                        outcomeAmount = "R$ 0,00",
+                        balanceAmount = "R$ 0,00"
                     ),
                     IntervalPresentation(
                         id = "DEZ/22",
                         tabTitle = "DEZ/22",
-                        incomeAmount = "",
-                        outcomeAmount = "",
-                        balanceAmount = ""
+                        incomeAmount = "R$ 0,00",
+                        outcomeAmount = "R$ 0,00",
+                        balanceAmount = "R$ 0,00"
                     ),
                     IntervalPresentation(
                         id = "NOV/22",
                         tabTitle = "NOV/22",
-                        incomeAmount = "",
-                        outcomeAmount = "",
-                        balanceAmount = ""
+                        incomeAmount = "R$ 0,00",
+                        outcomeAmount = "R$ 0,00",
+                        balanceAmount = "R$ 0,00"
                     ),
                     IntervalPresentation(
                         id = "OUT/22",
                         tabTitle = "OUT/22",
-                        incomeAmount = "",
-                        outcomeAmount = "",
-                        balanceAmount = ""
+                        incomeAmount = "R$ 0,00",
+                        outcomeAmount = "R$ 0,00",
+                        balanceAmount = "R$ 0,00"
                     ),
                     IntervalPresentation(
                         id = "SET/22",
                         tabTitle = "SET/22",
-                        incomeAmount = "",
-                        outcomeAmount = "",
-                        balanceAmount = ""
+                        incomeAmount = "R$ 0,00",
+                        outcomeAmount = "R$ 0,00",
+                        balanceAmount = "R$ 0,00"
                     )
                 )
             )

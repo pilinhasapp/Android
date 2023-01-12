@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="balance">Balanço</string>
+    <string name="income">Entradas</string>
+    <string name="outcome">Saídas</string>
 </resources>

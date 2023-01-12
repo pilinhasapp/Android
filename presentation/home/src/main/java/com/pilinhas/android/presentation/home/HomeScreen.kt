@@ -2,6 +2,7 @@
 
 package com.pilinhas.android.presentation.home
 
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -16,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
@@ -23,10 +25,12 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.PagerState
 import com.google.accompanist.pager.rememberPagerState
+import com.pilinhas.android.core.presentation.constants.SizeConstants
 import com.pilinhas.android.core.presentation.extensions.CollectViewEffect
 import com.pilinhas.android.core.presentation.extensions.collectViewState
 import com.pilinhas.android.presentation.home.model.IntervalPresentation
 import kotlinx.coroutines.launch
+import com.pilinhas.android.core.resources.R
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -98,7 +102,50 @@ fun Pager(viewState: HomeViewState.HasLoaded, pagerState: PagerState) {
 @Composable
 fun Page(intervalPresentation: IntervalPresentation) {
     ConstraintLayout {
+        val (balance, income, outcome) = createRefs()
 
+        AmountView(
+            modifier = Modifier.constrainAs(balance) {
+                top.linkTo(parent.top, margin = SizeConstants.Small)
+                start.linkTo(parent.start)
+                end.linkTo(parent.end)
+            },
+            titleResId = R.string.balance,
+            content = intervalPresentation.balanceAmount
+        )
+
+        AmountView(
+            modifier = Modifier.constrainAs(income) {
+                top.linkTo(balance.bottom, margin = SizeConstants.Small)
+                start.linkTo(parent.start)
+                end.linkTo(outcome.start)
+            },
+            titleResId = R.string.income,
+            content = intervalPresentation.incomeAmount
+        )
+
+        AmountView(
+            modifier = Modifier.constrainAs(outcome) {
+                top.linkTo(balance.bottom, margin = SizeConstants.Small)
+                start.linkTo(income.end)
+                end.linkTo(parent.end)
+            },
+            titleResId = R.string.outcome,
+            content = intervalPresentation.outcomeAmount
+        )
+
+    }
+}
+
+@Composable
+fun AmountView(
+    modifier: Modifier,
+    @StringRes titleResId: Int,
+    content: String
+) {
+    Column(modifier = modifier) {
+        Text(text = stringResource(id = titleResId))
+        Text(text = content)
     }
 }
 
